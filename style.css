@@ -1,0 +1,37 @@
+.navbar {
+    background-color: #ffffff;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .navbar-brand {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    padding: 10px 20px;
+  }
+  
+  .navbar-nav {
+    float: right;
+  }
+  
+  .nav-item {
+    padding: 10px 20px;
+  }
+  
+  .nav-link {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    color: #000000;
+    background-color: #f0f0f0;
+  }
+  

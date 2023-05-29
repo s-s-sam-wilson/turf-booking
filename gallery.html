@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    margin: 0px;
+}
+.navbar{
+    background-color: black;
+    margin-top: 0px;
+    padding: 0px;
+    height: 50px;
+}
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: inline;
+  margin-top: 0;
+  background-color: black;
+}
+.nav h1{
+    display: inline;
+    color: white;
+    font-family:cursive;
+    padding-left: 20px;
+    margin: 0px;
+}
+
+.nav li {
+  float: right;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.nav li a.active {
+  border-bottom: 1px solid white;
+  background-color:dimgrey;
+}
+
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #555;
+  color: white;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+    <div class="navbar">
+
+        <ul class="nav">
+            <h1><a href="http://localhost:3000/" style="color: white; text-decoration: none;">PlayZone</a></h1>
+            <li><a href="http://localhost:3000/booknow">Book Now</a></li>
+            <li><a href="http://localhost:3000/contact">Contact</a></li>
+            <li><a class="active" href="http://localhost:3000/gallery">Gallery</a></li>
+            <li><a href="http://localhost:3000/facilities">Facilities</a></li>
+            <li><a href="http://localhost:3000/">Home</a></li>
+          </ul>
+    </div>
+<h1 style="color: #284103; font-family: cursive; margin-left: 40px;">Gallery</h1>
+<div class="gallery">
+  <a target="_blank" href="/images/1.jpg">
+    <img src="/images/1.jpg" alt="Turf 1" width="600" height="400">
+  </a>
+  <div class="desc">Turf - 1</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="/images/7.jpg">
+    <img src="/images/7.jpg" alt="Turf 2" width="600" height="400">
+  </a>
+  <div class="desc">Turf - 2</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="/images/6.jpg">
+    <img src="/images/6.jpg" alt="FootBall" width="600" height="400">
+  </a>
+  <div class="desc">FootBall</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="/images/8.jpg">
+    <img src="/images/8.jpg" alt="Cricket" width="600" height="400">
+  </a>
+  <div class="desc">Cricket</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="/images/10.jpg">
+    <img src="/images/10.jpg" alt="Cricket" width="600" height="400">
+  </a>
+  <div class="desc">Play with your friend</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="/images/1.webp">
+    <img src="/images/1.webp" alt="Cricket" width="600" height="400">
+  </a>
+  <div class="desc">Cricket</div>
+</div>
+<div style="background-color: black; width: 100%; height: 50px; bottom: 0px; position: fixed;">
+    <h3 style="text-align: center; color: white; font-family: cursive;">HOMEZONE</h3>
+</div> 
+</body>
+</html>
+
+

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PlayZone</title>
+<style>
+body{
+    margin: 0px;
+}
+.navbar{
+    background-color: black;
+    margin-top: 0px;
+    padding: 0px;
+    height: 50px;
+}
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: inline;
+  margin-top: 0;
+  background-color: black;
+}
+.nav h1{
+    display: inline;
+    color: white;
+    font-family:cursive;
+    padding-left: 20px;
+    margin: 0px;
+}
+
+.nav li {
+  float: right;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.nav li a.active {
+  border-bottom: 1px solid white;
+  background-color:dimgrey;
+}
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/herobg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 400px;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #555;
+  color: white;
+}
+
+.o{
+    font-family: cursive;
+    display: inline-block;
+    padding: 30px;
+    width: 300px;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+
+    <ul class="nav">
+        <h1><a href="http://localhost:3000/" style="color: white; text-decoration: none;">PlayZone</a></h1>
+        <li><a href="http://localhost:3000/booknow">Book Now</a></li>
+        <li><a href="http://localhost:3000/contact">Contact</a></li>
+        <li><a href="http://localhost:3000/gallery">Gallery</a></li>
+        <li><a href="http://localhost:3000/facilities">Facilities</a></li>
+        <li><a class="active" href="http://localhost:3000/">Home</a></li>
+      </ul>
+</div>
+<div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:50px">Are You Ready?</h1>
+      <p>Book Your PlayGround</p>
+      <button class="button">BOOK NOW</button>
+    </div>
+</div>
+<h1 style="text-align: center; font-family: cursive; color: #284103;">Welcome to PLAYZONE Turf</h1>
+<div>
+    <h2 style="margin-left: 40px; font-family: cursive;">
+        Break from Work
+    </h2>
+    <p style="padding-left: 100px; padding-right: 40px; font-size: large; font-family: cursive;">
+        
+        <img src="/images/1.jpg" style="float: right; padding-right: 100px; " height="300px" width="600px" />
+        <br>
+    Is stress at work taking a toll on your health? It’s time to take a break; leave the office a little early and use the time re-energize yourself with these exciting games.
+    <br>
+    <br>
+    You are new to town and want to spend some quality time indulging yourself with fun and exciting games. On net sports, the package is exactly what you are looking for.
+    <br>
+    <br>
+    <span style="font-weight: bold;">Play On Turf is a premium sport and entertainment center located in Perundhurai.</span>
+    <br>
+    <br>
+    <button class="button">BOOK NOW</button>
+    </p>
+</div>
+<div class="four">
+    <div class="o" style="margin-left: 60px; ">
+        <img src="\images\2.jpg" height="300px" width="300px" />
+        <span style="color: red; margin-left: 35%;">Cricket</span>
+        <br>
+        <span>Spend an evening of box cricket with 
+            your friends and family in our perfectly groomed pitches ready round the clock for your sixers.</span>
+    </div>
+    <div class="o">
+        <img src="\images\3.jpg" height="300px" width="300px"/>
+        <span style="color: red; margin-left: 40%;">FootBall</span>
+        <br>
+        <span>Receive first-class training from our highly accredited coaches who will provide guidance to unleash your potential.</span>
+    </div>
+    <div class="o">
+        <img src="\images\4.jpg" height="300px" width="300px"/>
+        <span style="color: red; margin-left: 30%;">All Net Games</span>
+        <br>
+        <span>Challenge your friends on a Play On Turf match to show off your Gaming skills with your potential and Improve it to the next level.</span>
+    </div>
+    <div class="o">
+        <img src="\images\5.jpg" height="300px" width="300px"/>
+        <span style="color: red; margin-left: 35%;">Tournaments</span>
+        <br>
+        <span>Play competitive matches in our home ground to experience the intensity of sports tournaments and show your skills to the viewers.</span>
+    </div>
+</div>
+<br>
+<button class="button" style="margin-left: 47%;" onclick="window.location.href='http://localhost:3000/gallery'">Gallery</button>
+<br>
+<br>
+<div style="background-color: black; width: 100%; height: 50px;">
+    <h3 style="text-align: center; color: white; font-family: cursive;">HOMEZONE</h3>
+</div>
+</body>
+</html>
+
+

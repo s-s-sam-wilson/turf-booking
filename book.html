@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    margin: 0px;
+    background-image:  url("/images/herobg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    background-color: black;
+    margin-top: 0px;
+    padding: 0px;
+    height: 50px;
+}
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: inline;
+  margin-top: 0;
+  background-color: black;
+}
+.nav h1{
+    display: inline;
+    color: white;
+    font-family:cursive;
+    padding-left: 20px;
+    margin: 0px;
+}
+
+.nav li {
+  float: right;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.nav li a.active {
+  border-bottom: 1px solid white;
+  background-color:dimgrey;
+}
+
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color:  #ddd;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: white;
+  color: #555;
+}
+
+.inp{
+    height: 25px; 
+    width: 300px; 
+    font-size: 16pt;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="navbar">
+
+        <ul class="nav">
+            <h1><a href="http://localhost:3000/" style="color: white; text-decoration: none;">PlayZone</a></h1>
+            <li><a class="active"  href="http://localhost:3000/booknow">Book Now</a></li>
+            <li><a href="http://localhost:3000/contact">Contact</a></li>
+            <li><a href="http://localhost:3000/gallery">Gallery</a></li>
+            <li><a href="http://localhost:3000/facilities">Facilities</a></li>
+            <li><a href="http://localhost:3000/">Home</a></li>
+          </ul>
+    </div>
+<h1 style="color:chartreuse; font-family: cursive; margin-left: 40px;">BOOK YOUR PLAYTIME</h1>
+<div id = "fm" style="font-family: cursive; margin-left: 60px; font-size: 20pt;">
+    <br>
+    <form method="post" action="/booked" style="color: white;">
+        <table style="text-align: left;">
+            <tr>
+                <th><span>Name:</span></th>
+                <td><input type="text" name="name" id="name" class="inp"/></td>
+            </tr>
+            <tr>
+                <th><span>Email:</span></th>
+                <td><input type="email" name="email" id="email" class="inp"/><br></td>
+            </tr>
+            <tr>
+                <th><span>Phone no:</span></th>
+                <td><input type="tel" name="phn" id="phn" class="inp"/><br></td>
+            </tr>
+            <tr>
+                <th><span>Date:</span></th>
+                <td><input type="date" name="date" id="date" class="inp"/><br></td>
+            </tr>
+            <tr>
+                <th><span>Time Slot:</span></th>
+                <td> <select class="inp" name='timeslot' id='timeslot' style="height: 30px;">
+                    <option value="8:00am - 11:00am">8:00am - 11:00am</option>
+                    <option value="11:30am to 2:30pm">11:30am to 2:30pm</option>
+                    <option value="3:00pm to 6:00pm">3:00pm to 6:00pm</option>
+                    <option value="6:30pm to 9:30pm">6:30pm to 9:30pm</option>
+                    </select><br>
+                </td>
+            </tr>
+            <tr>
+                <th> <span>Turf:</span></th>
+                <td><select class="inp" name="turf" id="turf" style="height: 30px;">
+                    <option value="Turf - 1">Turf - 1</option>
+                    <option value="Turf - 2">Turf - 2</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th> <span>Beverages(ltr):</span></th>
+                <td><input type="number" name="juices" id="juices" class="inp"/></td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Book Now" class="button"/>
+    </form>
+
+</div>
+
+<div style="background-color: black; width: 100%; height: 50px; bottom: 0px; position: fixed;">
+    <h3 style="text-align: center; color: white; font-family: cursive;">HOMEZONE</h3>
+</div> 
+</body>
+</html>
+
+
